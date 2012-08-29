@@ -10,4 +10,4 @@ WIN_XY=$(echo $INFO | grep -oEe 'Corners:\s+\+[0-9]+\+[0-9]+' | grep -oEe '[0-9]
 #echo $WIN_GEO
 #echo $WIN_XY
 
-avconv -f ALSA -ac 2 -i hw:1,0 -f x11grab -r 15 -s $WIN_GEO -i :0.0+$WIN_XY -acodec libmp3lame -vcodec msmpeg4v2 -threads 0 $filename".avi"
+avconv -f ALSA -ac 2 -i hw:1,0 -f x11grab -r 15 -s $WIN_GEO -i :0.0+$WIN_XY -acodec libmp3lame -vcodec msmpeg4v2 -threads 0 -same_quant $filename".avi"
