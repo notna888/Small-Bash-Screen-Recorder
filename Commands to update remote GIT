@@ -1,0 +1,4 @@
+git commit -m 'Comment refering to the commit'
+
+
+git push -u origin master
