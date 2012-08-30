@@ -14,12 +14,7 @@ WIN_XY=$(echo $INFO | grep -oEe 'Corners:\s+\+[0-9]+\+[0-9]+' | grep -oEe '[0-9]
 #echo $WIN_GEO
 #echo $WIN_XY
 
-N=1
-while test "$N" -le "5"
-do
-        echo "Press Control C in the terminal to exit recording"
-        N=$[N+1]
-done
+echo "Press Control C in the terminal to exit recording"
 echo "sorry for spamming that but I need to make sure you get that"
 echo "press enter to start recording"
 read
